@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# This script will dump the contents of the MySQL database to files.
+#
+
+. ./mysql_info
+
+function dump_data ()
+{
+    echo -n "Dumping contents of $1:$2 ..."
+    [ ! -d $1 ] && mkdir $1
+    mysqldump$OPTS -Q --skip-dump-date --add-drop-table $1 $2 >$1/$2.sql
+    echo " done"
+}
+
+function dump_struc ()
+{
+    echo -n "Dumping structure of $1:$2 ..."
+    [ ! -d $1 ] && mkdir $1
+    mysqldump$OPTS -Q --skip-dump-date --add-drop-table --no-data $1 $2 >$1/$2.sql
+    echo " done"
+}
+
+#
+# Character database
+#
+dump_data  op_characters table
+
+#
+# Realm database
+#
+dump_data  op_realm table
+
+#
+# ScriptDev2 database
+#
+dump_data  op_scripts table
+
+#
+# World database
+#
+dump_data  op_world table
+
+#
+# Empty character database tables
+#
+dump_struc op_characters table
+
+#
+# Empty realm database tables
+#
+dump_struc op_realm table
+
+#
+# Empty ScriptDev2 database tables
+#
+dump_struc op_scripts table
+
+#
+# Empty World database tables
+#
+dump_struc op_world table
