@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: op_world
 -- ------------------------------------------------------
--- Server version	5.1.49-1ubuntu8.1
+-- Server version   5.1.49-1ubuntu8.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,7 @@ CREATE TABLE `spell_script_target` (
   `type` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `targetEntry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   UNIQUE KEY `entry_type_target` (`entry`,`type`,`targetEntry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Spell System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Spell System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
