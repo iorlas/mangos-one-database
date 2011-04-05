@@ -58,6 +58,7 @@ dump_data  op_world creature_ai_summons
 dump_data  op_world creature_ai_texts
 dump_data  op_world creature_battleground
 dump_data  op_world creature_equip_template
+dump_data  op_world creature_equip_template_raw
 dump_data  op_world creature_involvedrelation
 dump_data  op_world creature_loot_template
 dump_data  op_world creature_model_info
@@ -122,7 +123,9 @@ dump_data  op_world player_levelstats
 dump_data  op_world player_xp_for_level
 dump_data  op_world points_of_interest
 dump_data  op_world pool_creature
+dump_data  op_world pool_creature_template
 dump_data  op_world pool_gameobject
+dump_data  op_world pool_gameobject_template
 dump_data  op_world pool_pool
 dump_data  op_world pool_template
 dump_data  op_world prospecting_loot_template
@@ -153,6 +156,7 @@ dump_data  op_world spell_script_target
 dump_data  op_world spell_target_position
 dump_data  op_world spell_threat
 dump_data  op_world transports
+dump_data  op_world world_template
 
 #
 # Empty character database tables
@@ -185,6 +189,7 @@ dump_struc op_characters character_ticket
 dump_struc op_characters character_tutorial
 dump_struc op_characters corpse
 dump_struc op_characters creature_respawn
+dump_struc op_characters data_backup
 dump_struc op_characters gameobject_respawn
 dump_struc op_characters game_event_status
 dump_struc op_characters groups
@@ -211,6 +216,7 @@ dump_struc op_characters pet_aura
 dump_struc op_characters pet_spell
 dump_struc op_characters pet_spell_cooldown
 dump_struc op_characters saved_variables
+dump_struc op_characters world
 
 #
 # Empty realm database tables
