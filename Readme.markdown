@@ -1,5 +1,5 @@
-# MaNGOS One database ![Project status](http://stillmaintained.com/TheLuda/mangos-one-database.png)
-
+MaNGOS One database ![Project status](http://stillmaintained.com/TheLuda/mangos-one-database.png)
+===================
 A content database for MaNGOS One, compatible with the [World of Warcraft client
 version 2.4.3][10].
 
@@ -8,8 +8,8 @@ user-friendlyness to the [TBC database][1], created by X-Savior.  Content has
 been imported from the [TBC-DB subversion repository][2], and is based on the
 [update pack 1.0.4][3].
 
-## Getting started
-
+Getting started
+---------------
 The basic principle behind this customized database repository is to keep the
 databases stored as individual tables, and all content rows stored as single
 lines to make changes more trackable for the user (that would be you).
@@ -17,8 +17,8 @@ lines to make changes more trackable for the user (that would be you).
 The repository is developed and maintained using the excellent [git-flow][20]
 extension for git, to provide a clear, and visible [workflow][21] to the user.
 
-## Installing the database
-
+Installing the database
+-----------------------
 By default MaNGOS One uses four databases:
 
 * `op_characters`: where all character data is stored,
@@ -39,8 +39,8 @@ making changes to the database structure, you may execute `mysql_dump` to save
 each table into the repository.  Should you add or remove tables, add `dump_data`,
 `dump_struc` commands to `mysql_dump`, or remove them as needed.
 
-## And if something goes wrong?
-
+And if something goes wrong?
+----------------------------
 ... for now you will have to figure out on your own.  This repository currently
 is intended to test some structure, and help figure out some structural issues.
 
