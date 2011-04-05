@@ -1,0 +1,9 @@
+1.0.4-s1036:
+-----------
+Release date: **2011/04/05**
+
+* Imported TBC database 1.0.0.
+
+* Applied TBC database update pack 1.0.4
+
+* Upgraded the databases to MaNGOS One s1036.
