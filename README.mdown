@@ -1,4 +1,4 @@
-MaNGOS One database ![Project status](http://stillmaintained.com/TheLuda/mangos-one-database.png)
+mangos-one-database ![Project status](http://stillmaintained.com/TheLuda/mangos-one-database.png)
 ===================
 A content database for MaNGOS One, compatible with the [World of Warcraft client
 version 2.4.3][10].
