@@ -40,7 +40,7 @@ CREATE TABLE `areatrigger_teleport` (
   `target_orientation` float NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   FULLTEXT KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Trigger System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
